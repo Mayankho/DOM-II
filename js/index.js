@@ -20,3 +20,45 @@ headerH1.addEventListener('mouseenter', (event) => {
     event.target.style.fontSize = '4.5rem';
     console.log('mouse has entered');
 })
+
+// mouse leaves header 
+
+headerH1.addEventListener('mouseleave', (event) => {
+    event.target.preventPropagation;
+    event.target.transition = '0.3s ease-out';
+    event.target.style.fontSize = '4rem';
+    console.log('mouse has left');
+})
+
+header.addEventListener('mouseover', (event) =>{
+    event.target.preventPropagation;
+    event.target.style.backgroundColor = 'blue';
+    console.log('background is blue!');
+} );
+
+header.addEventListener('mouseout', (event) => {
+    event.target.stopPropagation;
+    event.target.style.backgroundColor = 'white';
+    console.log('background is back to normal!');
+});
+
+window.addEventListener('load', (event) => {
+    console.log('the page has loaded!!!');
+    event.target.stopPropagation;
+});
+
+
+funBusImg.addEventListener('dblclick', (event) => {
+    event.target.
+})
+
+
+
+
+
+
+
+
+
+
+
